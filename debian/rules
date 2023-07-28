@@ -1,4 +1,25 @@
 #!/usr/bin/make -f
 
+DEB_API_VERSION = 2.99.3
+
+# Set locale to ensure .dll files are built reproducibly.
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+
+# override libdir to workaround multi-arched pkg-config paths
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libdir=/usr/lib \
+		--enable-debug \
+		CSC=/usr/bin/mono-csc
+
+override_dh_makeclilibs:
+	dh_makeclilibs -m $(DEB_API_VERSION)
+
+# save space on CD images
+override_dh_builddeb:
+	dh_builddeb -- -Zxz
+
 %:
-	dh $@
+	dh $@ --with cli
+

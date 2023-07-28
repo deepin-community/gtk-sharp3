@@ -1,0 +1,56 @@
+Index: gtk-sharp3/gio/gio-sharp-3.0.pc.in
+===================================================================
+--- gtk-sharp3.orig/gio/gio-sharp-3.0.pc.in	2014-07-15 20:48:33.842674809 +0200
++++ gtk-sharp3/gio/gio-sharp-3.0.pc.in	2014-07-15 20:48:33.838674841 +0200
+@@ -1,7 +1,7 @@
+ prefix=${pcfiledir}/../..
+ exec_prefix=${prefix}
+ libdir=${exec_prefix}/lib
+-assemblies_dir=${libdir}/mono/@PACKAGE_VERSION@
++assemblies_dir=${libdir}/cli/gio-sharp-3.0
+ gapidir=${prefix}/share/gapi-3.0
+ 
+ Name: GIO#
+Index: gtk-sharp3/glib/glib-sharp-3.0.pc.in
+===================================================================
+--- gtk-sharp3.orig/glib/glib-sharp-3.0.pc.in	2014-07-15 20:48:33.842674809 +0200
++++ gtk-sharp3/glib/glib-sharp-3.0.pc.in	2014-07-15 20:48:33.838674841 +0200
+@@ -8,5 +8,5 @@
+ Description: GLib# - .NET Binding for the glib library.
+ Version: @VERSION@
+ Cflags: -I:${gapidir}/glib-api.xml
+-Libs: -r:${libdir}/mono/@PACKAGE_VERSION@/glib-sharp.dll
++Libs: -r:${libdir}/cli/glib-sharp-3.0/glib-sharp.dll
+ 
+Index: gtk-sharp3/gtk/gtk-sharp-3.0.pc.in
+===================================================================
+--- gtk-sharp3.orig/gtk/gtk-sharp-3.0.pc.in	2014-07-15 20:48:33.842674809 +0200
++++ gtk-sharp3/gtk/gtk-sharp-3.0.pc.in	2014-07-15 20:50:56.181558369 +0200
+@@ -8,5 +8,5 @@
+ Description: Gtk# - GNOME .NET Binding
+ Version: @VERSION@
+ Cflags: -I:${gapidir}/pango-api.xml -I:${gapidir}/atk-api.xml -I:${gapidir}/gtk-api.xml
+-Libs: -r:${libdir}/mono/@PACKAGE_VERSION@/cairo-sharp.dll -r:${libdir}/mono/@PACKAGE_VERSION@/pango-sharp.dll -r:${libdir}/mono/@PACKAGE_VERSION@/atk-sharp.dll  -r:${libdir}/mono/@PACKAGE_VERSION@/gtk-sharp.dll
++Libs: -r:${libdir}/cli/cairo-sharp-1.10/cairo-sharp.dll -r:${libdir}/cli/pango-sharp-3.0/pango-sharp.dll -r:${libdir}/cli/atk-sharp-3.0/atk-sharp.dll -r:${libdir}/cli/gtk-sharp-3.0/gtk-sharp.dll
+ Requires: glib-sharp-3.0 gio-sharp-3.0 gdk-sharp-3.0
+Index: gtk-sharp3/gtkdotnet/gtk-dotnet-3.0.pc.in
+===================================================================
+--- gtk-sharp3.orig/gtkdotnet/gtk-dotnet-3.0.pc.in	2014-07-15 20:48:33.842674809 +0200
++++ gtk-sharp3/gtkdotnet/gtk-dotnet-3.0.pc.in	2014-07-15 20:48:33.838674841 +0200
+@@ -7,4 +7,4 @@
+ Description: .NET Extensions for Gtk
+ Version: @VERSION@
+ Requires:gtk-sharp-3.0
+-Libs: -r:${libdir}/mono/@PACKAGE_VERSION@/gtk-dotnet.dll
++Libs: -r:${libdir}/cli/gtk-dotnet-3.0/gtk-dotnet.dll
+Index: gtk-sharp3/gdk/gdk-sharp-3.0.pc.in
+===================================================================
+--- gtk-sharp3.orig/gdk/gdk-sharp-3.0.pc.in	2014-07-15 20:42:19.773598735 +0200
++++ gtk-sharp3/gdk/gdk-sharp-3.0.pc.in	2014-07-15 20:51:47.897152234 +0200
+@@ -8,5 +8,5 @@
+ Description: Gdk# - GDK .NET Binding
+ Version: @VERSION@
+ Cflags: -I:${gapidir}/gdk-api.xml
+-Libs: -r:${libdir}/mono/@PACKAGE_VERSION@/gdk-sharp.dll
++Libs: -r:${libdir}/cli/gdk-sharp-3.0/gdk-sharp.dll
+ Requires: glib-sharp-3.0

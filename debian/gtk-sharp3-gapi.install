@@ -1,0 +1,9 @@
+usr/bin/gapi3-codegen
+usr/bin/gapi3-fixup
+usr/bin/gapi3-parser
+usr/lib/gapi-3.0/gapi-fixup.exe
+usr/lib/gapi-3.0/gapi-parser.exe
+usr/lib/gapi-3.0/gapi2xml.pl
+usr/lib/gapi-3.0/gapi_codegen.exe
+usr/lib/gapi-3.0/gapi_pp.pl
+usr/lib/pkgconfig/gapi-3.0.pc
