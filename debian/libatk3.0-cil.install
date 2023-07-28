@@ -1,0 +1,2 @@
+usr/lib/mono/gac/atk-sharp/3.0.*/* /usr/lib/cli/atk-sharp-3.0/
+usr/lib/libatksharpglue-3.so /usr/lib/cli/atk-sharp-3.0/

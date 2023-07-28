@@ -1,5 +1,79 @@
-template-repository (1.0-1) unstable; urgency=medium
+gtk-sharp3 (2.99.3-4.1) unstable; urgency=medium
 
-  * Initial release
+  * Non-maintainer upload.
+  * Do not install example Makefiles. (Closes: #989965)
+  * Build with C.UTF-8 locale to ensure reproducible builds of .dll files.
+    (Closes: #989966)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Vagrant Cascadian <vagrant@reproducible-builds.org>  Tue, 10 Jan 2023 10:56:28 -0800
+
+gtk-sharp3 (2.99.3-4) unstable; urgency=medium
+
+  * [09ff38e] Fix for building on newer Mono
+
+ -- Jo Shields <joshield@microsoft.com>  Mon, 24 Feb 2020 17:14:23 -0500
+
+gtk-sharp3 (2.99.3-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Jordi Mallach ]
+  * Replace missing define with its value to fix FTBFS. (Closes: #921785)
+
+ -- Andrej Shadura <andrewsh@debian.org>  Mon, 11 Mar 2019 14:00:10 +0100
+
+gtk-sharp3 (2.99.3-2) unstable; urgency=medium
+
+  * [f8d3e35] libgtk3.0-cil-dev has to depend on libgdk3.0-cil-dev 
+    as required by gtk-sharp-3.0.pc (closes: #755220)
+  * [46a03ad] libgdk3.0-cil-dev has to depend on libglib3.0-cil-dev 
+    as required by gdk-sharp-3.0.pc
+
+ -- Mirco Bauer <meebey@meebey.net>  Sat, 19 Jul 2014 10:50:44 +0100
+
+gtk-sharp3 (2.99.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.99.3
+  * refreshed pkg-config_library_paths.patch and updated for gdk-sharp-3.0.pc
+  * refreshed dllmap_gluelib_paths.patch
+  * Added new libgdk3.0-cil-dev package
+  * Moved gdk-api.xml from libgtk3.0-cil-dev to libgdk3.0-cil-dev
+  * Bumped clilibs to 2.99.3
+
+ -- Mirco Bauer <meebey@debian.org>  Tue, 15 Jul 2014 21:23:28 +0200
+
+gtk-sharp3 (2.99.2-2) unstable; urgency=low
+
+  * Bumped clilibs to 2.99.2
+  * Rebuild against libglib2.0-0 2.36.4-1 of unstable instead of experimental
+    (yes, this is what happens if you can no longer pbuild because of broken
+     deps in sid)
+
+ -- Mirco Bauer <meebey@debian.org>  Thu, 05 Dec 2013 19:18:39 +0100
+
+gtk-sharp3 (2.99.2-1) unstable; urgency=low
+
+  * Imported Upstream version 2.99.2
+
+ -- Mirco Bauer <meebey@debian.org>  Wed, 04 Dec 2013 22:50:43 +0100
+
+gtk-sharp3 (2.99.1-1) unstable; urgency=low
+
+  * Fixed package short description of libgtk3.0-cil-dev
+  * Fixed package long description of libgtk-dotnet3.0-cil-dev
+  * Bumped clilibs to >= 2.99.1
+  * Added libmono-profiler-gui-thread-check package
+
+ -- Mirco Bauer <meebey@debian.org>  Sat, 12 Oct 2013 17:45:36 +0200
+
+gtk-sharp3 (2.99.1-1~exp1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Mirco Bauer <meebey@debian.org>  Thu, 26 Sep 2013 23:51:00 +0200
+
+gtk-sharp3 (2.99.1~git20121105.135e4cd-1~exp1) experimental; urgency=low
+
+  * Initial release.
+
+ -- Mirco Bauer <meebey@debian.org>  Mon, 05 Nov 2012 07:03:04 +0100

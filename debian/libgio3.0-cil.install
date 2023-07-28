@@ -1,0 +1,2 @@
+usr/lib/mono/gac/gio-sharp/3.0.*/* /usr/lib/cli/gio-sharp-3.0/
+usr/lib/libgiosharpglue-3.so /usr/lib/cli/gio-sharp-3.0/

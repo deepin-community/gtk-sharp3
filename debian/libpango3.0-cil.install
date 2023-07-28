@@ -1,0 +1,2 @@
+usr/lib/mono/gac/pango-sharp/3.0.*/* /usr/lib/cli/pango-sharp-3.0/
+usr/lib/libpangosharpglue-3.so /usr/lib/cli/pango-sharp-3.0/

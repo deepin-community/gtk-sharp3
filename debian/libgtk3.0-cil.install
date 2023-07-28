@@ -1,0 +1,2 @@
+usr/lib/mono/gac/gtk-sharp/3.0.*/* /usr/lib/cli/gtk-sharp-3.0/
+usr/lib/libgtksharpglue-3.so /usr/lib/cli/gtk-sharp-3.0/
